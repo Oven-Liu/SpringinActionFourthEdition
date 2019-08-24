@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/Chapter_08/SpringPizza/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/Chapter_08/SpringPizza/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false" profiles="dev,prod">
+          <file>file://$MODULE_DIR$/Chapter_17/amqp/src/main/resources/META-INF/spring/amqp-consumer.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_17/amqp/src/main/resources/META-INF/spring/amqp-producer.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_17/amqp/src/main/resources/META-INF/spring/amqp-shared.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-javaconfig/src/main/resources/META-INF/spring/app-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-mixedconfig/src/main/resources/cd-config.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-mixedconfig/src/main/resources/cdplayer-config.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/CNamespaceReferenceTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/CNamespaceValueTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/ConstructorArgCollectionTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/ConstructorArgReferenceTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/ConstructorArgValueTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_08/SpringPizza/src/main/webapp/WEB-INF/spring/dataaccess.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_03/profiles/src/main/resources/datasource-config.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_08/SpringPizza/src/main/webapp/WEB-INF/spring/domain.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_08/SpringPizza/src/main/webapp/WEB-INF/spring/flow.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_10/jdbc/src/test/resources/spittr/db/jdbc/JdbcRepositoryTests-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_01/knight/src/main/resources/META-INF/spring/knight.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_01/knight/src/test/resources/sia/knights/KnightXMLInjectionTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_17/jms/src/main/resources/META-INF/spring/messaging.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_01/knight/src/main/resources/META-INF/spring/minstrel.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_08/SpringPizza/src/main/webapp/WEB-INF/spring/mvc.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_03/externals/src/test/resources/placeholder-config.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/PNamespaceRefTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/PNamespaceValueTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/PNamespaceWithUtilNamespaceTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/PropertyRefTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-xmlconfig/src/test/resources/soundsystem/PropertyValueTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_11/hibernate4/src/test/resources/spittr/db/hibernate4/RepositoryTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_11/jpa-springdata/src/test/resources/spittr/db/jpa/RepositoryTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_11/jpa-hibernate/src/test/resources/spittr/db/jpa/RepositoryTest-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_08/SpringPizza/src/main/webapp/WEB-INF/spring/root-config.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_09/thymeleaf/src/main/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_07/Spittr/src/main/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_06/jsp/src/main/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_16/spitter-api-content-negotiation/src/main/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_06/tiles/src/main/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_06/thymeleaf/src/main/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_16/spitter-api-message-converters/src/main/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_05/Spittr/src/main/webapp/WEB-INF/spring/root-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_03/scopedbeans/src/main/resources/scoped-beans.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_08/SpringPizza/src/main/webapp/WEB-INF/spring/services.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_06/tiles/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_09/thymeleaf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_06/thymeleaf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_16/spitter-api-message-converters/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_05/Spittr/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_16/spitter-api-content-negotiation/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_06/jsp/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_07/Spittr/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_02/stereo-autoconfig/src/main/resources/META-INF/spring/soundsystem.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_18/STOMP/src/main/resources/websocket-config.xml</file>
+          <file>file://$MODULE_DIR$/Chapter_18/WebSocket/src/main/resources/websocket-config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Spring-4.3.18.RELEASE" level="project" />
+  </component>
+</module>

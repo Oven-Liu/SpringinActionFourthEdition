@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Example_SpringinAction:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Example_SpringinAction_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Example_SpringinAction/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Example_SpringinAction" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
