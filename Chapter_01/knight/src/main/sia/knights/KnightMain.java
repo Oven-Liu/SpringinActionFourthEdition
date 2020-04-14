@@ -1,7 +1,6 @@
 package sia.knights;
 
-import org.springframework.context.support.
-                   ClassPathXmlApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class KnightMain {
 
