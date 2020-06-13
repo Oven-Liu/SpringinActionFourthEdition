@@ -1,14 +1,13 @@
 package com.springinaction.pizza.service;
 
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.apache.log4j.Logger;
-
 import com.springinaction.pizza.domain.Order;
 import com.springinaction.pizza.domain.Pizza;
 import com.springinaction.pizza.domain.PizzaSize;
+import org.apache.log4j.Logger;
+
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 @SuppressWarnings("serial")
 public class PricingEngineImpl 
@@ -28,6 +27,7 @@ public class PricingEngineImpl
   
   public PricingEngineImpl() {}
   
+  @Override
   public float calculateOrderTotal(Order order) {
     LOGGER.debug("Calculating order total");
     

@@ -1,4 +1,4 @@
-package spittr.data;
+package java.spittr.data;
 
 import spittr.Spitter;
 

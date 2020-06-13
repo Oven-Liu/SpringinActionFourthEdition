@@ -1,15 +1,15 @@
-package spittr.data;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
+package java.spittr.data;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-
 import spittr.Spittle;
+import spittr.data.SpittleRepository;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
 
 @Repository
 public class JdbcSpittleRepository implements SpittleRepository {

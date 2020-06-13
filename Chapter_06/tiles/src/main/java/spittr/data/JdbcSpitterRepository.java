@@ -1,14 +1,13 @@
-package spittr.data;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
+package java.spittr.data;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import spittr.Spitter;
+import java.spittr.Spitter;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 @Repository
 public class JdbcSpitterRepository implements SpitterRepository {
@@ -20,6 +19,7 @@ public class JdbcSpitterRepository implements SpitterRepository {
     this.jdbc = jdbc;
   }
 
+  @Override
   public Spitter save(Spitter spitter) {
     jdbc.update(
         "insert into Spitter (username, password, first_name, last_name, email)" +
@@ -32,6 +32,7 @@ public class JdbcSpitterRepository implements SpitterRepository {
     return spitter; // TODO: Determine value for id
   }
 
+  @Override
   public Spitter findByUsername(String username) {
     return jdbc.queryForObject(
         "select id, username, null, first_name, last_name, email from Spitter where username=?", 
@@ -40,6 +41,7 @@ public class JdbcSpitterRepository implements SpitterRepository {
   }
   
   private static class SpitterRowMapper implements RowMapper<Spitter> {
+    @Override
     public Spitter mapRow(ResultSet rs, int rowNum) throws SQLException {
       return new Spitter(
           rs.getLong("id"),

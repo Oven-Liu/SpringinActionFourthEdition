@@ -1,6 +1,4 @@
-package spittr.config;
-
-import java.util.regex.Pattern;
+package java.spittr.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;
@@ -9,7 +7,8 @@ import org.springframework.context.annotation.FilterType;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.type.filter.RegexPatternTypeFilter;
 
-import spittr.config.RootConfig.WebPackage;
+import java.spittr.config.RootConfig.WebPackage;
+import java.util.regex.Pattern;
 
 @Configuration
 @Import(DataConfig.class)

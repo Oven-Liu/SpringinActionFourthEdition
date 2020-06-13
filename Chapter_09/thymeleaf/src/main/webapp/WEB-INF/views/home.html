@@ -24,5 +24,13 @@
       View: <span th:text="${view}">unknown</span>
     </div>
     <div id="footer" th:include="page :: copy"></div>
+
+  <div sec:authorize="isAuthenticated()">
+    Hello <span sec:authentication="name">someone</span>
+  </div>
+
+  <div sec:authorize-url="/admin">
+    <a th:href="@{/admin}">admin</a>
+  </div>
   </body>
 </html>

@@ -1,4 +1,4 @@
-package spittr.data;
+package java.spittr.data;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import spittr.Spittle;
+import java.spittr.Spittle;
 
 @Repository
 public class JdbcSpittleRepository implements SpittleRepository {
@@ -21,6 +21,7 @@ public class JdbcSpittleRepository implements SpittleRepository {
     this.jdbc = jdbc;
   }
 
+  @Override
   public List<Spittle> findRecentSpittles() {
     return jdbc.query(
         "select id, message, created_at, latitude, longitude" +
@@ -29,6 +30,7 @@ public class JdbcSpittleRepository implements SpittleRepository {
         new SpittleRowMapper());
   }
 
+  @Override
   public List<Spittle> findSpittles(long max, int count) {
     return jdbc.query(
         "select id, message, created_at, latitude, longitude" +
@@ -38,6 +40,7 @@ public class JdbcSpittleRepository implements SpittleRepository {
         new SpittleRowMapper(), max);
   }
 
+  @Override
   public Spittle findOne(long id) {
     return jdbc.queryForObject(
         "select id, message, created_at, latitude, longitude" +

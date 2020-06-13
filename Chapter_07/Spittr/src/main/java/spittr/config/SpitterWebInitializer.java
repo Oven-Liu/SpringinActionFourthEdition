@@ -1,11 +1,11 @@
 package spittr.config;
 
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import spittr.web.WebConfig;
+
+import javax.servlet.Filter;
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration.Dynamic;
-
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-import spittr.web.WebConfig;
 
 public class SpitterWebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
   
@@ -29,5 +29,9 @@ public class SpitterWebInitializer extends AbstractAnnotationConfigDispatcherSer
     registration.setMultipartConfig(
         new MultipartConfigElement("/tmp/spittr/uploads", 2097152, 4194304, 0));
   }
- 
+
+  @Override
+  protected Filter[] getServletFilters() {
+    return new Filter[] { new MyFilter() };
+  }
 }

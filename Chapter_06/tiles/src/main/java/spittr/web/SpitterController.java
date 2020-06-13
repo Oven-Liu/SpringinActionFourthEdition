@@ -1,8 +1,4 @@
-package spittr.web;
-
-import static org.springframework.web.bind.annotation.RequestMethod.*;
-
-import javax.validation.Valid;
+package java.spittr.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,8 +7,12 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import spittr.Spitter;
-import spittr.data.SpitterRepository;
+import javax.validation.Valid;
+import java.spittr.Spitter;
+import java.spittr.data.SpitterRepository;
+
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Controller
 @RequestMapping("/spitter")

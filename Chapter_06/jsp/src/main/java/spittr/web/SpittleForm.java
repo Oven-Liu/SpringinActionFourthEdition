@@ -1,4 +1,4 @@
-package spittr.web;
+package java.spittr.web;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;

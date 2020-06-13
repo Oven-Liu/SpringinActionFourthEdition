@@ -1,6 +1,5 @@
 package soundsystem.properties;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import soundsystem.CompactDisc;
 import soundsystem.MediaPlayer;
 

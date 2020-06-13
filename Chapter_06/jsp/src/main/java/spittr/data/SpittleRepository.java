@@ -1,8 +1,8 @@
-package spittr.data;
-
-import java.util.List;
+package java.spittr.data;
 
 import spittr.Spittle;
+
+import java.util.List;
 
 public interface SpittleRepository {
 

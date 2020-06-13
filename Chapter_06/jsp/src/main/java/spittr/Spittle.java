@@ -1,9 +1,9 @@
-package spittr;
-
-import java.util.Date;
+package java.spittr;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+
+import java.util.Date;
 
 public class Spittle {
 

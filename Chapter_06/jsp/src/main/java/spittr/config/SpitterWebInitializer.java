@@ -1,4 +1,4 @@
-package spittr.config;
+package java.spittr.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

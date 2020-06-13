@@ -1,11 +1,11 @@
-package spittr;
-
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+package java.spittr;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.hibernate.validator.constraints.Email;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class Spitter {
 

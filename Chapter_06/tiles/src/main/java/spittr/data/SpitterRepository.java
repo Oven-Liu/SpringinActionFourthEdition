@@ -1,6 +1,7 @@
-package spittr.data;
+package java.spittr.data;
 
-import spittr.Spitter;
+
+import java.spittr.Spitter;
 
 public interface SpitterRepository {
 

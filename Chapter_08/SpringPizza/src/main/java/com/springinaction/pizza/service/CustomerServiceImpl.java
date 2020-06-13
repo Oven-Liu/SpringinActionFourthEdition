@@ -5,6 +5,7 @@ import com.springinaction.pizza.domain.Customer;
 public class CustomerServiceImpl implements CustomerService {
   public CustomerServiceImpl() {}
   
+  @Override
   public Customer lookupCustomer(String phoneNumber) throws CustomerNotFoundException {
     if("9725551234".equals(phoneNumber)) {
       Customer customer = new Customer();

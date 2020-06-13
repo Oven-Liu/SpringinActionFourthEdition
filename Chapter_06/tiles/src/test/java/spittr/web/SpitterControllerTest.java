@@ -1,15 +1,16 @@
-package spittr.web;
-
-import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+package java.spittr.web;
 
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 
-import spittr.Spitter;
-import spittr.data.SpitterRepository;
+import java.spittr.Spitter;
+import java.spittr.data.SpitterRepository;
+
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
 public class SpitterControllerTest {
 

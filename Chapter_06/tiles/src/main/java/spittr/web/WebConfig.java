@@ -1,4 +1,4 @@
-package spittr.web;
+package java.spittr.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("spittr.web")
+@ComponentScan("java.spittr.web")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
   @Override

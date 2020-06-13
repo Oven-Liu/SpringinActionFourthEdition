@@ -1,15 +1,14 @@
 package spittr.config;
 
-import java.util.regex.Pattern;
-
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.*;
 import org.springframework.context.annotation.ComponentScan.Filter;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
-import org.springframework.context.annotation.Import;
 import org.springframework.core.type.filter.RegexPatternTypeFilter;
-
+import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
 import spittr.config.RootConfig.WebPackage;
+
+import java.util.regex.Pattern;
 
 @Configuration
 @Import(DataConfig.class)
@@ -22,5 +21,14 @@ public class RootConfig {
     public WebPackage() {
       super(Pattern.compile("spittr\\.web"));
     }    
+  }
+
+  @Bean
+  public ViewResolver viewResolver() {
+    InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+    resolver.setPrefix("/WEB-INF/views/");
+    resolver.setSuffix(".jsp");
+    resolver.setViewClass(JstlView.class);
+    return resolver;
   }
 }
